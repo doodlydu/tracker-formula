@@ -1,4 +1,4 @@
-from efficiency_core import compute_task_score, set_day_params
+from tracker.core.efficiency_core import compute_task_score, set_day_params
 from csv_logger import log_day
 def compute_daily_efficiency():
     """
