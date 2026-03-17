@@ -1,0 +1,11 @@
+run_id,day_type,number_of_tasks,task_1_planned,task_1_achieved,task_1_importance,task_1_quality,task_1_score,task_2_planned,task_2_achieved,task_2_importance,task_2_quality,task_2_score,task_3_planned,task_3_achieved,task_3_importance,task_3_quality,task_3_score,task_4_planned,task_4_achieved,task_4_importance,task_4_quality,task_4_score,task_5_planned,task_5_achieved,task_5_importance,task_5_quality,task_5_score,task_6_planned,task_6_achieved,task_6_importance,task_6_quality,task_6_score,task_7_planned,task_7_achieved,task_7_importance,task_7_quality,task_7_score,task_8_planned,task_8_achieved,task_8_importance,task_8_quality,task_8_score,task_9_planned,task_9_achieved,task_9_importance,task_9_quality,task_9_score,task_10_planned,task_10_achieved,task_10_importance,task_10_quality,task_10_score,daily_efficiency
+1,Efficient,3,3.0,2.0,0.6,0.8,0.71,1.5,1.5,0.8,0.8,0.92,4.0,3.0,1.0,0.6,0.91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.86
+2,Normal,3,3.0,2.0,0.6,0.8,0.72,1.5,1.5,0.8,0.8,0.92,4.0,3.0,1.0,0.6,0.91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.86
+3,Normal,3,3.0,2.0,0.6,0.8,0.72,1.5,1.5,0.8,0.8,0.92,4.0,3.0,1.0,0.6,0.91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.86
+4,Normal,4,4.0,3.0,1.0,0.6,0.65,4.0,3.0,0.7,0.8,0.59,4.0,3.0,0.9,0.6,0.61,3.0,2.0,0.5,0.9,0.48,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.6
+5,Efficient,4,4.0,4.0,1.0,1.0,1.16,4.0,3.0,0.8,0.6,0.54,4.0,3.0,0.9,0.9,0.62,5.0,4.0,0.9,0.9,0.67,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.76
+6,Efficient,3,1.5,1.5,0.9,0.9,1.07,2.0,1.5,0.9,0.5,0.61,2.0,1.8,1.0,0.7,0.85,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.84
+7,Chill,3,2.0,2.0,0.7,0.8,0.87,4.0,2.0,1.0,1.0,0.71,6.0,4.0,0.7,0.9,0.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.75
+8,Chill,4,4.0,3.0,0.7,0.9,0.75,2.0,1.5,1.0,0.7,0.83,4.0,4.0,1.0,0.7,0.99,6.0,4.0,1.0,1.0,0.84,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.86
+9,Normal,6,3.0,1.0,1.0,0.6,0.32,5.0,3.0,2.0,0.5,0.84,6.0,5.0,0.6,0.4,0.58,8.0,5.0,1.0,1.0,0.66,8.0,7.0,0.5,0.8,0.67,6.0,4.0,0.5,0.9,0.54,,,,,,,,,,,,,,,,,,,,,0.65
+10,Efficient,4,4.0,3.0,0.7,0.8,0.6,5.0,4.0,0.5,0.8,0.59,4.0,4.0,0.6,0.9,0.91,7.0,5.0,0.7,0.9,0.58,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.67
