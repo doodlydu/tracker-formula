@@ -1,8 +1,6 @@
 import pandas as pd
 import numpy as np
 from pathlib import Path
-
-# =========================================================
 # CONFIGURATION
 # =========================================================
 INPUT_FILE = Path("synthetic_efficiency_100_days.csv")
@@ -102,7 +100,7 @@ df["eff_trend_direction"] = df["eff_trend_medium"].apply(classify_trend)
 df["days_since_improvement"] = 0
 last_peak_idx = 0
 for i in range(1, len(df)):
-    if df.loc[i, "daily_efficiency"] > df.loc[i-1:i, "daily_efficiency"].max():
+    if df.loc[i, "daily_efficiency"] > df.loc[i-1, "daily_efficiency"]:
         last_peak_idx = i
     df.loc[i, "days_since_improvement"] = i - last_peak_idx
 
@@ -111,13 +109,16 @@ for i in range(1, len(df)):
 # =========================================================
 # Dynamically detect number of tasks
 task_score_cols = [col for col in df.columns if col.startswith("task_") and col.endswith("_score")]
-max_tasks = len(task_score_cols)
+max_tasks = len(task_score_cols) if task_score_cols else 10
 
 task_scores     = [f"task_{i}_score" for i in range(1, max_tasks + 1)]
 task_planned    = [f"task_{i}_planned" for i in range(1, max_tasks + 1)]
 task_achieved   = [f"task_{i}_achieved" for i in range(1, max_tasks + 1)]
 task_importance = [f"task_{i}_importance" for i in range(1, max_tasks + 1)]
 task_quality    = [f"task_{i}_quality" for i in range(1, max_tasks + 1)]
+
+for col in task_planned + task_achieved:
+    df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
 
 df["total_planned"]  = df[task_planned].sum(axis=1)
 df["total_achieved"] = df[task_achieved].sum(axis=1)
